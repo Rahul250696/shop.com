@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="Home.css"> -->
+    <link rel="stylesheet" href="./style/navbar.css">
+    <title>Shop.com</title>
+</head>
+<style>
+    
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.form {
+    position: absolute;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+.header1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #0d0d0e;
+    text-align: center;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.form .field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.field input,
+.field button {
+    height: 100%;
+    width: 80%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    margin-left: 45px;
+}
+
+.field input {
+    outline: none;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.field input:focus {
+    border: 1.1px solid #0d0d0e;
+
+}
+
+.field button {
+    color: #fff;
+    background-color: #0d0d0e;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.field button:hover {
+    background-color: #0d0d0e;
+    transform: scale(1.1);
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-link span,
+.form-link a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+
+.form a {
+    color: #038099;
+    text-decoration: none;
+}
+
+.form-content a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 400px) {
+    .form {
+        padding: 20px 10px;
+    }
+
+} 
+    @media only screen and (min-width:0px) and(max-width:400px) {
+        input {
+            width: 100px;
+        }
+
+        #button {
+            width: 100px;
+        }
+    }
+
+    @media only screen and (min-width:401px) and(max-width:800px) {
+        input {
+            width: 200px;
+
+        }
+
+        #button {
+            width: 180px;
+        }
+
+    } 
+</style>
+
+<body>
+    <section id="navbar">
+        <div class="navbar-left">
+            <a href="index.html">
+                <div id="logo">
+                    <img src="https://img.shop.com/Image/resources/logos/shop-logo-us-christmas.svg" alt="" />
+                </div>
+            </a>
+            <div id="menu-bar">
+                <img src="https://img.shop.com/Image/resources/images/icon-menu-24px.svg" alt="" />
+            </div>
+        </div>
+        <div id="navbar-right">
+            <div id="navbar-right-top">
+                <div class="searchbar">
+                    <input type="text" placeholder="Search" id="video_search" />
+                    <div>
+                        <img  src="https://cdn2.iconfinder.com/data/icons/apple-inspire-white/100/Apple-30-512.png"
+                            width="20px" height="20px" />
+                    </div>
+                </div>
+                <div id="header-left-top">
+                    <img src="https://img.shop.com/Image/header2013/layered-us-eng-105972-blk-friday-bannerheader1668091493562.jpg"
+                        alt="" />
+                </div>
+            </div>
+            <div class="navbar-right-bottom">
+                <ul class="dept-list">
+                    <li class="dept-item">
+                        <a href="mensData.html" class="active">Men</a>
+                    </li>
+                    <li class="dept-item">
+                        <a href="womansData.html">Women</a>
+                    </li>
+                    <li class="dept-item">
+                        <a href="kidsData.html">Kids</a>
+                    </li>
+                    <li class="dept-item">
+                        <a href="./electronics.html">Electronics</a>
+                    </li>
+                    <li class="dept-item">
+                        <a href="./health.html">Health</a>
+                    </li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="login.html"><i class="fas fa-user-circle"><span class="thinFont">Sign In</span></i></a>
+                    <a href="order.html"><i class="fas fa-redo-alt"><span class="thinFont"> Orders</span></i></a>
+                    <a href="cart.html"><i class="fas fa-shopping-cart"><span class="thinFont"> Cart</span></i></a>
+                </div>
+               
+            </div>
+            
+        </div>
+        <button type="button" class="nav-toggler">
+            <span></span>
+         </button>
+    </section>
+    <h1>hello</h1>
+   
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+        
+        <header class="header1">Login</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" id="email" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" id="pass" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot password?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button id="signinbtn" type="submit" value="Sign In">Log In</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Don't have an account? <a id="button" onclick="window.location.href='signup.html'">Signup</a></span>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer-up">
+            <div class="deals-1">
+                <div class="right">
+                    <h5>Get Email Deals & Earn Cashback</h5>
+                    <input type="text" placeholder="enter email address..." id="email" /><span><button
+                            id="footer-btn">sign
+                            Up</button></span>
+                </div>
+                <p>Link to this page and tell all your friends</p>
+            </div>
+            <div class="deals-2">
+                <p>
+                    About Us | Help | Accessibility Statement | Contact Us | Partner
+                    with us | Services | Country/Region | Connect | Own your Own Shop
+                    Site
+                </p>
+                <span>
+                    <i class="fas fa-envelope"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest"></i>
+                </span>
+            </div>
+        </div>
+        <div class="footer-down">
+            <p>
+                © 1997-2022 Market America, Inc. or its affiliates. All other
+                designated trademarks, copyrights, and brands are the property of
+                their respective owners.
+            </p>
+            <p>
+                Only Customers will receive cashback on qualifying purchases.
+                UnFranchise Owners/Shop Consultants will receive increased IBV instead
+                of cashback on qualifying purchases.
+            </p>
+            <div class="policy">
+                <a href="#">Policy</a> | <a href="#">Terms of Use</a> |
+                <a href="#">Advertising disclosure</a> |
+                <a href="#">Return Policy</a> |
+                <a href="#">Shipping Information</a>
+            </div>
+            <hr />
+            <div class="footer-images">
+                <img src="https://www.shop.com/feo-cdn/A/A/pzI6tGZhU.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/z/b/qA5FJf0J4.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/q/B/9huVMYs4g.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/9/y/SggnBCF2o.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/p/Y/nOXdu76ik.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/u/P/cg2zbaz_s.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/K/F/E44Pe49Qs.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/T/P/ESOWP6gWY.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/T/P/ESOWP6gWY.webp" alt="" />
+            </div>
+            <div id="foot-img-last">
+                <img src="./images/download.png" alt="" />
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", signin);
+    var regdUser = JSON.parse(localStorage.getItem("userDatabase"));
+    console.log(regdUser);
+
+    function signin(event) {
+        event.preventDefault();
+
+        var emailuser = document.querySelector("#email").value;
+        var password = document.querySelector("#pass").value;
+
+        var flag = false;
+        for (var i = 0; i < regdUser.length; i++) {
+            if (regdUser[i].email == emailuser && regdUser[i].passwd == password) {
+                flag = true;
+                break;
+            }
+        }
+        if (flag == true) {
+            alert("Login successful");
+            window.location.href = "index.html";
+        }
+        else {
+            alert("wrong credential");
+        }
+    }
+</script>
+<script src="./script/navbar.js"></script>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <title>Shop.com</title>
+</head>
+<style>
+    .mainAddress {
+        margin-top: 12%;
+        display: flex;
+    }
+
+    .addressForm {
+        width:300px;
+        margin-left: 20%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+            rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        font-weight: bold;
+        font-size: 0.8rem;
+        margin-bottom: 7%;
+    }
+    .addressForm2{
+        margin-top: 0%;
+        padding-left: 20px;
+    }
+    /* .addressForm2>h1{
+        font-size: 10px;
+    } */
+
+    .addressForm>input {
+        border: 1px solid gray;
+        border-radius: 0;
+        width: 100%;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .addressForm>#submit {
+        margin-top: 20px;
+        height: 3em;
+        background-color: #414467;
+        /* margin-bottom: 2%; */
+        border-radius: 5px;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    @media screen and (max-width: 576px) {
+        .addressForm {
+        /* width:200px; */
+        padding-left: 0px;
+        }
+        .mainAddress {
+        margin-top: 30%;
+        display: block;
+    }
+  
+}
+</style>
+
+<body>
+    <section id="navbar">
+        <div class="navbar-left">
+            <a href="index.html">
+                <div id="logo">
+                    <img src="https://img.shop.com/Image/resources/logos/shop-logo-us-christmas.svg" alt="" />
+                </div>
+            </a>
+            <div id="menu-bar">
+                <img src="https://img.shop.com/Image/resources/images/icon-menu-24px.svg" alt="" />
+            </div>
+        </div>
+        <div id="navbar-right">
+            <div id="navbar-right-top">
+                <div class="searchbar">
+                    <input type="text" placeholder="Search" id="video_search" />
+                    <div>
+                        <img  src="https://cdn2.iconfinder.com/data/icons/apple-inspire-white/100/Apple-30-512.png"
+                            width="20px" height="20px" />
+                    </div>
+                </div>
+                <div id="header-left-top">
+                    <img src="https://img.shop.com/Image/header2013/layered-us-eng-105972-blk-friday-bannerheader1668091493562.jpg"
+                        alt="" />
+                </div>
+            </div>
+            <div class="navbar-right-bottom">
+                <ul class="dept-list">
+                    <li class="dept-item">
+                        <a href="mensData.html" class="active">Men</a>
+                    </li>
+                    <li class="dept-item">
+                        <a href="womansData.html">Women</a>
+                    </li>
+                    <li class="dept-item">
+                        <a href="kidsData.html">Kids</a>
+                    </li>
+                    <li class="dept-item">
+                        <a href="./electronics.html">Electronics</a>
+                    </li>
+                    <li class="dept-item">
+                        <a href="./health.html">Health</a>
+                    </li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="login.html"><i class="fas fa-user-circle"><span class="thinFont">Sign In</span></i></a>
+                    <a href="order.html"><i class="fas fa-redo-alt"><span class="thinFont"> Orders</span></i></a>
+                    <a href="cart.html"><i class="fas fa-shopping-cart"><span class="thinFont"> Cart</span></i></a>
+                </div>
+               
+            </div>
+            
+        </div>
+        <button type="button" class="nav-toggler">
+            <span></span>
+         </button>
+    </section>
+
+    <div class="mainAddress">
+        <form class="addressForm">
+            <h2>Complete Payment</h2>
+            <p>Name On Card</p>
+            <input type="text" class="name" placeholder="Enter your name" />
+            <p>Card Number</p>
+            <input type="number" class="cardNumber" placeholder="Enter card number (123)" />
+            <p>CVV</p>
+            <input type="number" class="CVV" placeholder="Enter your CVV (123)" />
+            <p>Expiry Date</p>
+            <input type="text" class="expDate" placeholder="Enter expiry date (12/25)" />
+            <input type="submit" id="submit" />
+        </form>
+
+
+        <form class="addressForm2">
+            <h4>Please Enter Your OTP</h4>
+            <input type="number" id="otp" placeholder="Enter OTP (1234)" />
+            <button id="sub">Submit</button> 
+        </form>
+
+
+    </div>
+
+    <footer id="footer">
+        <div class="footer-up">
+            <div class="deals-1">
+                <div class="right">
+                    <h5>Get Email Deals & Earn Cashback</h5>
+                    <input type="text" placeholder="enter email address..." id="email" /><span><button
+                            id="footer-btn">sign
+                            Up</button></span>
+                </div>
+                <p>Link to this page and tell all your friends</p>
+            </div>
+            <div class="deals-2">
+                <p>
+                    About Us | Help | Accessibility Statement | Contact Us | Partner
+                    with us | Services | Country/Region | Connect | Own your Own Shop
+                    Site
+                </p>
+                <span>
+                    <i class="fas fa-envelope"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest"></i>
+                </span>
+            </div>
+        </div>
+        <div class="footer-down">
+            <p>
+                © 1997-2022 Market America, Inc. or its affiliates. All other
+                designated trademarks, copyrights, and brands are the property of
+                their respective owners.
+            </p>
+            <p>
+                Only Customers will receive cashback on qualifying purchases.
+                UnFranchise Owners/Shop Consultants will receive increased IBV instead
+                of cashback on qualifying purchases.
+            </p>
+            <div class="policy">
+                <a href="#">Policy</a> | <a href="#">Terms of Use</a> |
+                <a href="#">Advertising disclosure</a> |
+                <a href="#">Return Policy</a> |
+                <a href="#">Shipping Information</a>
+            </div>
+            <hr />
+            <div class="footer-images">
+                <img src="https://www.shop.com/feo-cdn/A/A/pzI6tGZhU.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/z/b/qA5FJf0J4.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/q/B/9huVMYs4g.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/9/y/SggnBCF2o.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/p/Y/nOXdu76ik.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/u/P/cg2zbaz_s.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/K/F/E44Pe49Qs.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/T/P/ESOWP6gWY.webp" alt="" />
+                <img src="https://www.shop.com/feo-cdn/T/P/ESOWP6gWY.webp" alt="" />
+            </div>
+            <div id="foot-img-last">
+                <img src="./images/download.png" alt="" />
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="./script/payment.js"></script>
+<script src="./script/navbar.js"></script>
